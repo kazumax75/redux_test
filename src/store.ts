@@ -1,10 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
+import HogeCounterReducer from "./redux/HogeCounterSlice";
+import FugaCounterReducer from "./redux/FugaCounterSlice";
 
 export const store = configureStore({
   reducer: {
-    // posts: postsReducer,
-    // comments: commentsReducer,
-    // users: usersReducer,
+    hoge: HogeCounterReducer,
+    fuga: FugaCounterReducer,
   },
 })
 
